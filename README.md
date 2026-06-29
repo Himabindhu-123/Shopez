@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# 🛍️ ShopEZ - One Stop E-Commerce Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack MERN e-commerce application where customers can browse products, add to cart, place orders, and make secure payments.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Frontend:
 
-### `npm start`
+Backend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📸 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🛒 Product catalog with categories, search, filters, and stock status
+- 🛍️ Cart with quantity controls
+- 💳 Checkout flow with address and order summary
+- 📦 Order history with delivery tracking
+- 🔐 Login/Register with Firebase Authentication
+- ⚙️ Admin panel for product CRUD (protected by email)
+- 📱 Responsive design
 
-### `npm test`
+## 🧰 Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Frontend:**
+- React.js
+- React Router DOM
+- Axios
+- Firebase Authentication
+- Context API for state management
 
-### `npm run build`
+**Backend:**
+- Node.js
+- Express.js
+- MongoDB with Mongoose
+- REST API
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+shopez/                  # React Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+├── src/
 
-### `npm run eject`
+│   ├── components/      # Navbar
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+│   ├── context/         # CartContext
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+│   ├── pages/           # Home, Cart, Checkout, Orders, Admin, Login
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+│   └── firebase.js      # Firebase config
+shopez-backend/          # Node/Express Backend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+├── models/              # Product, Order schemas
 
-## Learn More
+├── routes/              # products, orders API routes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+└── server.js            # Entry point
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Installation & Setup
 
-### Code Splitting
+### Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+cd shopez-backend
+npm install
+# Create .env file with:
+# MONGO_URI=your_mongodb_uri
+# PORT=5000
+node server.js
+```
 
-### Analyzing the Bundle Size
+### Frontend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+cd shopez
+npm install
+# Create .env file with Firebase config
+npm start
+```
 
-### Making a Progressive Web App
+### 🔑 Environment Variables
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Frontend (.env)
 
-### Advanced Configuration
+```bash
+REACT_APP_FIREBASE_API_KEY=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+REACT_APP_FIREBASE_AUTH_DOMAIN=
 
-### Deployment
+REACT_APP_FIREBASE_PROJECT_ID=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+REACT_APP_FIREBASE_STORAGE_BUCKET=
 
-### `npm run build` fails to minify
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+REACT_APP_FIREBASE_APP_ID=
+```
+
+### Backend (.env)
+
+```bash
+MONGO_URI=
+
+PORT=5000
+```
+
+## 👩‍💻 Author
+Himabindhu Ravuri
