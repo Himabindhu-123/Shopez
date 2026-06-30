@@ -67,7 +67,7 @@ function Checkout() {
   return (
     <div style={styles.page}>
       <h2 style={styles.heading}>Checkout</h2>
-      <div style={styles.layout}>
+      <div className="checkout-layout" style={styles.layout}>
         <div style={styles.formCard}>
           <h3 style={styles.subHeading}>Delivery Address</h3>
           {error && <p style={styles.error}>{error}</p>}

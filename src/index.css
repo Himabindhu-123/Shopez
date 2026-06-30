@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@media (max-width: 768px) {
+  .nav-hamburger {
+    display: block !important;
+  }
+  .nav-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .checkout-layout {
+    grid-template-columns: 1fr !important;
+  }
+  .admin-layout {
+    grid-template-columns: 1fr !important;
+  }
+}

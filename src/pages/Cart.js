@@ -19,7 +19,7 @@ function Cart() {
     <div style={styles.page}>
       <h2 style={styles.heading}>Your Cart ({totalItems} items)</h2>
 
-      <div style={styles.layout}>
+      <div className="cart-layout" style={styles.layout}>
         <div style={styles.itemsList}>
           {cartItems.map(item => (
             <div key={item._id} style={styles.itemCard}>

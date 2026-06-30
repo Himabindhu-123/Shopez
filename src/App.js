@@ -1,6 +1,7 @@
 import Login from './pages/Login';
 import Checkout from './pages/Checkout';
 import Orders from './pages/Orders';
+import Footer from './components/Footer';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
@@ -21,6 +22,7 @@ function App() {
           <Route path="/checkout" element={<Checkout />} />
           <Route path="/orders" element={<Orders />} />
         </Routes>
+      <Footer />
       </BrowserRouter>
     </CartProvider>
   );

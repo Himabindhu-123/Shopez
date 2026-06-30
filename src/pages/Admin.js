@@ -95,7 +95,7 @@ function Admin() {
         </div>
       </div>
 
-      <div style={styles.sections}>
+      <div className="admin-layout" style={styles.sections}>
         <div style={styles.formCard}>
           <h3 style={styles.subHeading}>Add Product</h3>
           {message && <p style={styles.success}>{message}</p>}
