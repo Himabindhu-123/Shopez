@@ -2,6 +2,11 @@
 
 A full-stack MERN e-commerce application where customers can browse products, add to cart, place orders, and make secure payments.
 
+## 🔗 Repository Links
+
+- Frontend Repo: https://github.com/Himabindhu-123/Shopez
+- Backend Repo: https://github.com/Himabindhu-123/shopez-backend
+
 ## 🚀 Live Demo
 
 Frontend:
