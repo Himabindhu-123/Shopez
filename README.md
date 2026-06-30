@@ -18,6 +18,26 @@ Backend:
 - ⚙️ Admin panel for product CRUD (protected by email)
 - 📱 Responsive design
 
+## 🖼️ Screenshots
+
+### Home Page
+![Home Page](./screenshots/home.png)
+
+### Cart Page
+![Cart Page](./screenshots/cart.png)
+
+### Checkout Page
+![Checkout Page](./screenshots/checkout.png)
+
+### Order History
+![Orders Page](./screenshots/orders.png)
+
+### Admin Panel
+![Admin Panel](./screenshots/admin.png)
+
+### Login Page
+![Login Page](./screenshots/login.png)
+
 ## 🧰 Tech Stack
 
 **Frontend:**
@@ -39,13 +59,14 @@ shopez/                  # React Frontend
 
 ├── src/
 
-│   ├── components/      # Navbar
+│   ├── components/      # Navbar, Footer
 
 │   ├── context/         # CartContext
 
 │   ├── pages/           # Home, Cart, Checkout, Orders, Admin, Login
 
 │   └── firebase.js      # Firebase config
+
 shopez-backend/          # Node/Express Backend
 
 ├── models/              # Product, Order schemas
@@ -101,6 +122,18 @@ MONGO_URI=
 
 PORT=5000
 ```
+
+## 🔮 Future Enhancements
+
+- 💳 Integrate real payment gateway (Razorpay/Stripe) instead of Cash on Delivery
+- ⭐ Add product reviews and ratings
+- ❤️ Add wishlist feature
+- 🔍 Advanced filters (price range, ratings)
+- 📊 Admin dashboard with sales charts and analytics
+- 📧 Email notifications for order confirmation
+- 🔁 Order status tracking (Processing → Shipped → Delivered) updated by admin
+- 🌙 Dark mode support
+- 🗣️ Multi-language support
 
 ## 👩‍💻 Author
 Himabindhu Ravuri
