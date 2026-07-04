@@ -9,9 +9,9 @@ A full-stack MERN e-commerce application where customers can browse products, ad
 
 ## 🚀 Live Demo
 
-Frontend:
+Frontend: Soon...
 
-Backend:
+Backend: Soon...
 
 ## 📸 Features
 
